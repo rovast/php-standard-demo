@@ -35,6 +35,4 @@ PHP 规范示例工程
 
 我们结合 composer script 进行使用。
 
-**composer check-copy-src**
-
-检测代码是否存在复制情况
+- `**composer check-copy-src**` 检测代码是否存在复制情况
