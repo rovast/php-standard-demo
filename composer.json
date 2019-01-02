@@ -13,5 +13,11 @@
         "sebastian/phpcpd": "^4.1",
         "phpmd/phpmd": "^2.6",
         "friendsofphp/php-cs-fixer": "^2.13"
+    },
+    "scripts": {
+        "check-copy-sample": "vendor/bin/phpcpd ./src",
+        "fix-sample": "vendor/bin/php-cs-fixer fix ./src",
+        "check-mess-sample": "vendor/bin/phpmd ./src text ./phpmd.xml",
+        "check-sample": "composer check-copy-sample && composer check-mess-sample"
     }
 }
