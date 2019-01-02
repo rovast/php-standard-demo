@@ -15,9 +15,9 @@
         "friendsofphp/php-cs-fixer": "^2.13"
     },
     "scripts": {
-        "check-copy-sample": "vendor/bin/phpcpd ./src",
-        "fix-sample": "vendor/bin/php-cs-fixer fix ./src",
-        "check-mess-sample": "vendor/bin/phpmd ./src text ./phpmd.xml",
-        "check-sample": "composer check-copy-sample && composer check-mess-sample"
+        "check-copy-src": "vendor/bin/phpcpd ./src",
+        "fix-src": "vendor/bin/php-cs-fixer fix ./src",
+        "check-mess-src": "vendor/bin/phpmd ./src text ./phpmd.xml",
+        "check-src": "composer check-copy-sample && composer check-mess-sample"
     }
 }

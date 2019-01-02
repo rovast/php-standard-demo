@@ -1,6 +1,6 @@
 <?php
 $header = <<<EOF
-This file is part of the rovast/weather.
+This file is part of the rovast/php-standard-demo.
 
 (c) rovast <rovast@163.com>
 

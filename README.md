@@ -1,7 +1,7 @@
 # php-standard-demo
 PHP 规范示例工程
 
-# 介绍
+## 介绍
 
 团队协作中，规范显得尤其重要。我们可以通过一些现有的自动化工具来进行规范。
 本工程结合了当前社区的工具，只选出了必要的工具，所谓小而精，大概也说的就是
@@ -30,3 +30,11 @@ PHP 规范示例工程
 安装：`composer require sebastian/phpcpd --dev -vvv`
 
 一句话介绍：检测项目是否存在代码到处复制粘贴
+
+## 使用
+
+我们结合 composer script 进行使用。
+
+**composer check-copy-src**
+
+检测代码是否存在复制情况
