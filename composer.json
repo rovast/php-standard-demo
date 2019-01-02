@@ -1,0 +1,17 @@
+{
+    "name": "rovast/php-standard-demo",
+    "description": "php standard demo",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "rovast",
+            "email": "rovast@163.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "sebastian/phpcpd": "^4.1",
+        "phpmd/phpmd": "^2.6",
+        "friendsofphp/php-cs-fixer": "^2.13"
+    }
+}
