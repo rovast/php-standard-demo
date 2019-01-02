@@ -49,6 +49,6 @@ PHP 规范示例工程
 }
 ```
 
-> - `**composer check-copy-src**` 检测代码是否存在复制情况
+> - `composer check-copy-src` 检测代码是否存在复制情况
 
 **2. 在项目中运行 `composer install -vvv`**
