@@ -33,6 +33,22 @@ PHP 规范示例工程
 
 ## 使用
 
-我们结合 composer script 进行使用。
+**1. 复制粘贴 `composer.json` 中的依赖和脚本到工程中**
 
-- `**composer check-copy-src**` 检测代码是否存在复制情况
+```json
+"require-dev": {
+    "sebastian/phpcpd": "^4.1",
+    "phpmd/phpmd": "^2.6",
+    "friendsofphp/php-cs-fixer": "^2.13"
+},
+"scripts": {
+    "check-copy-src": "vendor/bin/phpcpd ./src",
+    "fix-src": "vendor/bin/php-cs-fixer fix ./src",
+    "check-mess-src": "vendor/bin/phpmd ./src text ./phpmd.xml",
+    "check-src": "composer check-copy-sample && composer check-mess-sample"
+}
+```
+
+> - `**composer check-copy-src**` 检测代码是否存在复制情况
+
+**2. 在项目中运行 `composer install -vvv`**
