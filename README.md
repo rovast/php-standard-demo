@@ -45,10 +45,15 @@ PHP 规范示例工程
     "check-copy-src": "vendor/bin/phpcpd ./src",
     "fix-src": "vendor/bin/php-cs-fixer fix ./src",
     "check-mess-src": "vendor/bin/phpmd ./src text ./phpmd.xml",
-    "check-src": "composer check-copy-sample && composer check-mess-sample"
+    "check-src": "composer check-copy-src && composer check-mess-src"
 }
 ```
 
-> - `composer check-copy-src` 检测代码是否存在复制情况
+其中 composer script 就是对默认命令的组合
+
+> - `composer check-copy-src` 检测 src 目录下代码是否存在复制情况
+> - `composer fix-src` 校正 src 目录下代码风格
+> - `check-mess-src` 检查 src 目录下代码复杂度等
+> - `check-src` 复制和代码复杂度联合检测
 
 **2. 在项目中运行 `composer install -vvv`**
